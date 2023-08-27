@@ -1,0 +1,19 @@
+--- How to Compile
+    Under this directory, enter the following command:
+        $ make
+    This will automatically delete the old executable file "hw5" in the directory "../bin/" and existing result files in "../output/", then generate the new executable file in the directory "../bin/".
+
+--- How to Run & Verify:
+    Notice: We combine execution and verification in one step.
+    Under this directory, enter the following command:
+        $ make test
+    Then, the terminal will let you enter the number of current sources. We take "4" for example. This will execute "hw5" and read the number "4" as input and write the result into "CS_4.def" in the directory "../output".
+    After execution, it will automatically run the verification program to test the result.
+
+    If you want to execute and verify all different number of current sources (4, 16, 36, 64, 100) in one command, enter the following command instead:
+        $ make out
+
+--- How to Clean:
+    Under this directory, enter the following command:
+        $ make clean
+    This will delete the executable file "hw5" in the directory "../bin/" and the result files of testcases in the directory "../output/".

@@ -1,0 +1,20 @@
+--- How to Compile
+    Under this directory, enter the following command:
+        $ make
+    This will automatically delete the old executable file "hw4" in the directory "../bin/" and existing result files in "../output/", then generate the new executable file in the directory "../bin/".
+
+--- How to Run & Verify:
+    Notice: We combine execution and verification in one step.
+    Under this directory, enter the following command:
+        $ make test
+    Then, the terminal will let you enter the testcase. We take "adaptec1" for example. This will execute "hw4" and read "adaptec1.aux" under the directory "../testcase/adaptec1/" as input and write the result into "adaptec1.result" in the directory "../output".
+    After execution, it will automatically run the verification program to test the result.
+    Other available testcases are: adaptec3, ibm01, ibm07, and ibm09.
+
+    If you want to execute and verify all testcases in one command, enter the following command instead:
+        $ make out
+
+--- How to Clean:
+    Under this directory, enter the following command:
+        $ make clean
+    This will delete the executable file "hw4" in the directory "../bin/" and the result files of testcases in the directory "../output/".

@@ -1,0 +1,26 @@
+--- How to Compile
+    Under this directory, enter the following command:
+        $ make
+    This will automatically delete the old executable file "hw2" in the directory "../bin/" and existing result files in "../output/", then generate the new one in the same directory.
+
+--- How to Run:
+    Under this directory, enter the following command (take 1st testcase as example):
+        $ make tc_1
+    This will execute "hw2" and read "p2-1.cells" and "p2-1.nets" under the directory "../testcases/" as input data and write the result into "p2-1.out" in the directory "../output/".
+    You can replace tc_1 with tc_2 to tc_5 to execute and produce the result of each testcase.
+
+    If you want to execute all testcases at the same time, enter the following command instead:
+        $ make out
+
+--- How to Verify:
+    Similar as above. Under this directory, enter the following command (take 1st result as example):
+        $ make ts_1
+    You can use ts_1 to ts_5 to verify each result.
+
+    If you want to verify all results at the same time, enter the following command instead:
+        $ make ver
+
+--- How to Clean:
+    Under this directory, enter the following command:
+        $ make clean
+    This will delete the executable file "hw2" in the directory "../bin/" and the result files of testcases in the directory "../output/".

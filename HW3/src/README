@@ -1,0 +1,14 @@
+--- How to Compile
+    Under this directory, enter the following command:
+        $ make
+    This will automatically delete the old executable file "hw3" in the directory "../bin/" and existing result files in "../output/", then generate the new one in the same directory.
+
+--- How to Run:
+    Under this directory, enter the following command:
+        $ make test
+    Then, terminal will let you enter the testcase and dead space ratio. We take n100 and 0.15 for example. This will execute "hw3" and read "n100.hardblocks", "n100.nets", and "n100.pl" under the directory "../testcases/" and dead space ratio 0.15 as input data and write the result into "n100.floorplan" in the directory "../output/".
+
+--- How to Clean:
+    Under this directory, enter the following command:
+        $ make clean
+    This will delete the executable file "hw3" in the directory "../bin/" and the result files of testcases in the directory "../output/".
